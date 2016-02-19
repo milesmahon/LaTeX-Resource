@@ -1,0 +1,61 @@
+\documentclass{article}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[R]{Mahon}
+\usepackage{mathtools} %allow matrix formatting like:
+
+%$\begin{bmatrix*}[r]
+% & 0 & -2 & 0 \\
+%4 & 0 & 0 & -2 \\
+ %& 2 & 0 & -1 
+%\end{bmatrix*}$\newline\newline
+
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+%above changes subsections to 1a instead of 1.1
+
+%to add picture
+\usepackage{graphicx}
+\graphicspath{ {Documents/} }
+
+%\includegraphics[scale=.25]{CS330HW2Array}
+
+\begin{document}
+
+\title{CS 330: HW 01}
+\date{9/12/15}
+\author{Miles Mahon}
+
+\maketitle
+\pagenumbering{gobble}
+\newpage
+\pagenumbering{arabic}
+
+\section{Problem 1} %     Problem 1 ------------------------------------
+"Show a complete, non-stable matching."
+\newline
+Consider women $w$ and $w'$, and men $m$ and $m'$, whose preferences are as follows:\newline
+\newline
+$w = (m',m)$ [i.e., $w$ prefers $m'$ to $m$] \newline
+$w' = (m, m')$\newline
+$m = (w', w)$\newline
+$m' = (w, w')$\newline
+\newline
+A complete matching could be one in which $(w,m)$ are together and $(w',m')$ are together, however since $w$ prefers $m'$ and $m'$ prefers $w$ as well, these two would pair off, therefore the matching is not stable (the alternative matching that would be formed if these two paired off, however, \textit{is} stable, as $m$ and $w'$ prefer each other anyway).
+
+
+\section{Problem 2}
+
+\subsection{}%A
+
+
+\section{Problem 3}
+
+
+
+
+
+
+
+
+\end{document}
